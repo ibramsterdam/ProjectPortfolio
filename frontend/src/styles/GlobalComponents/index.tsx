@@ -29,7 +29,7 @@ export const Section = styled.section<{
 `;
 
 export const SectionTitle = styled.h2<{
-  main: boolean;
+  main?: boolean;
 }>`
   font-weight: 800;
   font-size: ${(props) => (props.main ? '65px' : '56px')};
