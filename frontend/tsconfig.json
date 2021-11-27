@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/components/TimeLine/TimeLineStyles.jsx", "src/styles/GlobalComponents/Button.jsx"  ],
+, "src/components/TimeLine/TimeLineStyles.jsx", "src/styles/GlobalComponents/Button.tsx"  ],
   "exclude": [
     "node_modules"
   ]

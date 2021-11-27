@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Section = styled.section`
+export const Section = styled.section<{
+  row?: boolean;
+  nopadding?: boolean;
+  grid?: boolean;
+}>`
   display: ${(props) => (props.grid ? 'grid' : 'flex')};
   flex-direction: ${(props) => (props.row ? 'row' : 'column')};
   padding: ${(props) => (props.nopadding ? '0' : '32px 48px 0')};
@@ -24,7 +28,9 @@ export const Section = styled.section`
   }
 `;
 
-export const SectionTitle = styled.h2`
+export const SectionTitle = styled.h2<{
+  main: boolean;
+}>`
   font-weight: 800;
   font-size: ${(props) => (props.main ? '65px' : '56px')};
   line-height: ${(props) => (props.main ? '72px' : '56px')};
@@ -80,7 +86,10 @@ export const SectionText = styled.p`
   }
 `;
 
-export const SectionDivider = styled.div`
+export const SectionDivider = styled.div<{
+  colorAlt?: boolean;
+  divider?: boolean;
+}>`
   width: 64px;
   height: 6px;
   border-radius: 10px;
@@ -171,7 +180,11 @@ export const SecondaryBtn = styled.button`
   }
 `;
 
-export const ButtonBack = styled.div`
+export const ButtonBack = styled.div<{
+  alt: string;
+  form: string;
+  disabled: string;
+}>`
   width: ${({ alt }) => (alt ? '150px' : '262px')};
   height: ${({ alt }) => (alt ? '52px' : '64px')};
   border-radius: 50px;
@@ -207,7 +220,9 @@ export const ButtonBack = styled.div`
   }
 `;
 
-export const ButtonFront = styled.button`
+export const ButtonFront = styled.button<{
+  alt: string;
+}>`
   border: none;
   border-radius: 50px;
   color: #fff;
@@ -261,7 +276,9 @@ export const ButtonFront = styled.button`
   }
 `;
 
-export const LinkContainer = styled.div`
+export const LinkContainer = styled.div<{
+  large: string;
+}>`
   margin-left: ${({ large }) => (large ? '24px' : '16px')};
   transition: 0.3s ease;
   justify-content: center;
@@ -282,7 +299,10 @@ export const LinkContainer = styled.div`
   }
 `;
 
-export const LinkIconImg = styled.div`
+export const LinkIconImg = styled.div<{
+  large: string;
+  nav: string;
+}>`
   display: flex;
   height: ${({ large }) => (large ? '32px' : '24px')};
 
