@@ -1,6 +1,7 @@
 import Theme from '../styles/theme';
+import { AppProps } from 'next/app';
 
-export default function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Theme>
@@ -9,4 +10,3 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
- 
