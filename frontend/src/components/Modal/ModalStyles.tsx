@@ -4,8 +4,6 @@ export const StyledModalBody = styled.div`
   padding-top: 10px;
 `;
 
-export const StyledModalTitle = styled.div``;
-
 export const StyledModalHeader = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -29,9 +27,18 @@ export const StyledModalOverlay = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
 `;
 
 export const StyledModalWrapper = styled.div`
-  width: 500px;
-  height: 600px;
+  width: 1000px;
+  height: 400px;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    width: 700px;
+    height: 400px;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    width: 300px;
+    height: 550px;
+  }
 `;

@@ -1,15 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { BsXCircle } from 'react-icons/bs';
 import ReactDOM from 'react-dom';
 import {
   StyledModalOverlay,
   StyledModal,
   StyledModalHeader,
   StyledModalBody,
-  StyledModalTitle,
   StyledModalWrapper,
 } from './ModalStyles';
 
-const Modal = ({ show, onClose, children, title }) => {
+const Modal = ({ show, onClose, children }) => {
   const [isBrowser, setIsBrowser] = useState(false);
 
   // create ref for the StyledModalWrapper component
@@ -42,10 +42,9 @@ const Modal = ({ show, onClose, children, title }) => {
         <StyledModal>
           <StyledModalHeader>
             <a href="#" onClick={handleCloseClick}>
-              x
+              <BsXCircle size="3rem"></BsXCircle>
             </a>
           </StyledModalHeader>
-          {title && <StyledModalTitle>{title}</StyledModalTitle>}
           <StyledModalBody>{children}</StyledModalBody>
         </StyledModal>
       </StyledModalWrapper>

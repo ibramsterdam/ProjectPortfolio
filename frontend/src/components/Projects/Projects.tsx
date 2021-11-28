@@ -10,7 +10,7 @@ import { projects } from '../../constants/constants';
 const Projects = () => (
   <Section nopadding={true} id="projects">
     <SectionDivider />
-    <SectionTitle main={true}>Portfolio</SectionTitle>
+    <SectionTitle main={true}>Dev Portfolio</SectionTitle>
     <Pstyles.GridContainer>
       {projects.map(
         ({ id, image, title, description, tags, source, visit }) => (
