@@ -1,5 +1,4 @@
 import React from 'react';
-
 import * as Pstyles from './ProjectsStyles';
 import {
   Section,
@@ -11,7 +10,7 @@ import { projects } from '../../constants/constants';
 const Projects = () => (
   <Section nopadding={true} id="projects">
     <SectionDivider />
-    <SectionTitle main={true}>Projects</SectionTitle>
+    <SectionTitle main={true}>Portfolio</SectionTitle>
     <Pstyles.GridContainer>
       {projects.map(
         ({ id, image, title, description, tags, source, visit }) => (
