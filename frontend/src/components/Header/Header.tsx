@@ -5,7 +5,6 @@ import { BiDumbbell } from 'react-icons/bi';
 import { DiCode } from 'react-icons/di';
 import * as HStyles from './HeaderStyles';
 import Modal from '../Modal/Modal';
-import { NavLink, SocialIcons } from './HeaderStyles';
 
 const Header = () => {
   const [showModal, setShowModal] = useState(false);
@@ -23,22 +22,22 @@ const Header = () => {
       <HStyles.NavSubjects>
         <li>
           <Link href="/#projects">
-            <NavLink>Portfolio</NavLink>
+            <HStyles.NavLink>Portfolio</HStyles.NavLink>
           </Link>
         </li>
         <li>
           <Link href="/About">
-            <NavLink>About</NavLink>
+            <HStyles.NavLink>About</HStyles.NavLink>
           </Link>
         </li>
         <li>
-          <NavLink
+          <HStyles.NavLink
             onClick={() => {
               setShowModal(true);
             }}
           >
             Contact Me
-          </NavLink>
+          </HStyles.NavLink>
 
           <div>
             <Modal show={showModal} onClose={() => setShowModal(false)}></Modal>
@@ -46,15 +45,15 @@ const Header = () => {
         </li>
       </HStyles.NavSubjects>
       <HStyles.NavSocials>
-        <SocialIcons href="https://github.com">
+        <HStyles.SocialIcons href="https://github.com">
           <AiFillGithub size="3rem"></AiFillGithub>
-        </SocialIcons>
-        <SocialIcons href="https://www.linkedin.com/in/bram-janssen-aa0859210/">
+        </HStyles.SocialIcons>
+        <HStyles.SocialIcons href="https://www.linkedin.com/in/bram-janssen-aa0859210/">
           <AiFillLinkedin size="3rem"></AiFillLinkedin>
-        </SocialIcons>
-        <SocialIcons href="https://facebook.com">
+        </HStyles.SocialIcons>
+        <HStyles.SocialIcons href="https://facebook.com">
           <AiFillFacebook size="3rem"></AiFillFacebook>
-        </SocialIcons>
+        </HStyles.SocialIcons>
       </HStyles.NavSocials>
     </HStyles.Container>
   );
