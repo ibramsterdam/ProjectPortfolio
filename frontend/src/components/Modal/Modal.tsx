@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { BsXCircle } from 'react-icons/bs';
 import ReactDOM from 'react-dom';
+import { AiFillMail, AiFillPhone } from 'react-icons/ai';
 import {
   StyledModalOverlay,
   StyledModal,
   StyledModalHeader,
   StyledModalBody,
   StyledModalWrapper,
+  LeftSection,
+  RightSection,
+  SectionTitle,
+  SectionSubTitle,
+  Links,
 } from './ModalStyles';
 
-const Modal = ({ show, onClose, children }) => {
+const Modal = ({ show, onClose }) => {
   const [isBrowser, setIsBrowser] = useState(false);
 
   // create ref for the StyledModalWrapper component
@@ -45,7 +51,27 @@ const Modal = ({ show, onClose, children }) => {
               <BsXCircle size="3rem"></BsXCircle>
             </a>
           </StyledModalHeader>
-          <StyledModalBody>{children}</StyledModalBody>
+          <StyledModalBody>
+            <LeftSection>
+              <SectionTitle>Contact Information</SectionTitle>
+              <br />
+              <SectionSubTitle>
+                Or fill in the contact information and click send!
+              </SectionSubTitle>
+              <br />
+              <br />
+              <Links>
+                <AiFillPhone></AiFillPhone> 0620644824
+                <br />
+              </Links>
+              <Links>
+                <AiFillMail></AiFillMail> Bram.Janssen2@hva.nl
+              </Links>
+            </LeftSection>
+            <RightSection>
+              <form></form>
+            </RightSection>
+          </StyledModalBody>
         </StyledModal>
       </StyledModalWrapper>
     </StyledModalOverlay>

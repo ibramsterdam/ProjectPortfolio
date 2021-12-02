@@ -41,9 +41,7 @@ const Header = () => {
           </NavLink>
 
           <div>
-            <Modal show={showModal} onClose={() => setShowModal(false)}>
-              Test
-            </Modal>
+            <Modal show={showModal} onClose={() => setShowModal(false)}></Modal>
           </div>
         </li>
       </HStyles.NavSubjects>
