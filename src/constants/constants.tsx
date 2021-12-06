@@ -15,7 +15,7 @@ export const projects = [
     title: 'School-Project',
     description:
       'Using the Angular framework on the frontend and Spring boot on the backend, this project is a fulyl deployed website on the internet',
-    image: prefix + '/images/WedstrijdHistorie.jpg',
+    image: prefix + '/images/WedstrijdHistorie.JPG',
     tags: ['Angular', 'Typescript', 'Spring Boot'],
     source: 'https://site.ewa.hva.timkwakman.ovh/',
     visit: 'https://google.com',
