@@ -1,7 +1,7 @@
 import Theme from '../styles/theme';
 import { AppProps } from 'next/app';
 
-const prefix = '/ProjectPortfolio';
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH;
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
