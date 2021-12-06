@@ -15,9 +15,11 @@ const Technologies = () => (
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus
-      consectetur autem quisquam qui, aut ratione? Mollitia praesentium cumque
-      quae possimus?
+      At the University of Applied Sciences I have been using the Angular
+      framework for the frontend mixed with the Spring Boot framework on the
+      backend. This portfolio is made with the React framework with Typescript
+      as programming language. This portfolio is deployed on Github Pages and
+      rebuilds itself with every commit!
     </SectionText>
     <TStyles.List>
       <TStyles.ListItem>

@@ -7,18 +7,18 @@ export const projects = [
       'Using React and Next.js, I have build my portfolio. By default, Next.js pre-renders every page wich results in better performance and SEO',
     image: prefix + '/images/Portfolio.JPG',
     tags: ['NextJs', 'Typescript', 'React'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    source: 'https://github.com/ibramsterdam/ProjectPortfolio',
+    visit: 'https://ibramsterdam.github.io/ProjectPortfolio/',
     id: 0,
   },
   {
     title: 'School-Project',
     description:
-      'Using the Angular framework on the frontend and Spring boot on the backend, this project is a fulyl deployed website on the internet',
+      'Using the Angular framework on the frontend and Spring boot on the backend, this project is a fully deployed website on the internet',
     image: prefix + '/images/WedstrijdHistorie.JPG',
     tags: ['Angular', 'Typescript', 'Spring Boot'],
     source: 'https://site.ewa.hva.timkwakman.ovh/',
-    visit: 'https://google.com',
+    visit: '',
     id: 1,
   },
 ];
