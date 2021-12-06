@@ -36,22 +36,21 @@ const Header = () => {
               setShowModal(true);
             }}
           >
-            Contact Me
+            Contact
           </HStyles.NavLink>
-
           <div>
             <Modal show={showModal} onClose={() => setShowModal(false)}></Modal>
           </div>
         </li>
       </HStyles.NavSubjects>
       <HStyles.NavSocials>
-        <HStyles.SocialIcons href="https://github.com">
+        <HStyles.SocialIcons href="https://github.com/ibramsterdam">
           <AiFillGithub size="3rem"></AiFillGithub>
         </HStyles.SocialIcons>
         <HStyles.SocialIcons href="https://www.linkedin.com/in/bram-janssen-aa0859210/">
           <AiFillLinkedin size="3rem"></AiFillLinkedin>
         </HStyles.SocialIcons>
-        <HStyles.SocialIcons href="https://facebook.com">
+        <HStyles.SocialIcons href="https://www.facebook.com/profile.php?id=100019404574647">
           <AiFillFacebook size="3rem"></AiFillFacebook>
         </HStyles.SocialIcons>
       </HStyles.NavSocials>

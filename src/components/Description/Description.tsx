@@ -2,7 +2,6 @@ import React from 'react';
 import { FcCheckmark } from 'react-icons/fc';
 import {
   Section,
-  SectionDivider,
   SectionText,
   SectionTitle,
 } from '../../styles/GlobalComponents';

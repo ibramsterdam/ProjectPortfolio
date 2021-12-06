@@ -69,7 +69,9 @@ export const NavLink = styled.a`
     cursor: pointer;
   }
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
+    min-width: 50px;
+    padding: 1rem;
+    font-size: 2rem;
   }
 `;
 
@@ -100,26 +102,6 @@ export const ContactDropDown = styled.button`
     padding: 0;
   }
 `;
-
-// export const NavProductsIcon = styled(IoIosArrowDropdown)`
-//   margin-left: 8px;
-//   display: flex;
-//   align-self: center;
-//   transition: 0.3s ease;
-//   opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
-//   transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
-
-//   &:hover {
-//     opacity: 1;
-//   }
-
-//   @media ${(props) => props.theme.breakpoints.sm} {
-//     margin: 2px 0 0 2px;
-//     width: 15px;
-//   }
-// `;
-
-// Social Icons
 
 export const SocialIcons = styled.a`
   transition: 0.3s ease;
