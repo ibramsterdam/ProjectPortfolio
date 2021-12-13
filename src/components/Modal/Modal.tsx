@@ -19,11 +19,11 @@ const Modal = ({ show, onClose }) => {
   const [isBrowser, setIsBrowser] = useState(false);
 
   // create ref for the StyledModalWrapper component
-  const modalWrapperRef = React.useRef<HTMLHeadingElement>(null);
+  const modalOverlayRef = React.useRef<HTMLHeadingElement>(null);
 
   //Check whether the click is in or out of the modalOverlay
   const backDropHandler = (e: any) => {
-    if (modalWrapperRef?.current == e.target) {
+    if (modalOverlayRef?.current == e.target) {
       onClose();
     }
   };
@@ -43,7 +43,7 @@ const Modal = ({ show, onClose }) => {
   };
 
   const modalContent = show ? (
-    <StyledModalOverlay ref={modalWrapperRef}>
+    <StyledModalOverlay ref={modalOverlayRef}>
       <StyledModalWrapper>
         <StyledModal>
           <StyledModalHeader>
@@ -61,7 +61,7 @@ const Modal = ({ show, onClose }) => {
               <br />
               <br />
               <Links>
-                <AiFillPhone></AiFillPhone> 0620644824
+                <AiFillPhone></AiFillPhone> 06********
                 <br />
               </Links>
               <Links>
